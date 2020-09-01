@@ -6,9 +6,13 @@ namespace CoffeeShopConsoleApp
 {
     class Cortado : Coffee, Milk
     {
+        public Cortado(int Discount) : base(Discount)
+        {
+            Price = 25;
+        }
         public override int price()
         {
-            return 25;
+           return base.price();
         }
         public int gotMilk()
         {

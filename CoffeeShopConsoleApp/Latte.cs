@@ -6,6 +6,11 @@ namespace CoffeeShopConsoleApp
 {
     class Latte : Coffee , Milk
     {
+
+        public Latte(int Discount):base(Discount)
+        {
+            Price = 40;
+        }
         public int gotMilk()
         {
             return 200;
@@ -13,7 +18,7 @@ namespace CoffeeShopConsoleApp
 
         public override int price()
         {
-            return 40;
+            return base.price();
         }
 
         public override string strength()
