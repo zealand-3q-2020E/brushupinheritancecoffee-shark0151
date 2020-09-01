@@ -7,7 +7,7 @@ namespace CoffeeShopConsoleApp
     /// <summary>
     /// A class that is used for coffe orders
     /// </summary>
-    public class Coffee
+    public abstract class Coffee
     {
         /// <summary>
         /// returns the price of the coffee
@@ -18,6 +18,10 @@ namespace CoffeeShopConsoleApp
         {
             return 20;
         }
+
+        public abstract string strength();
+
+        public enum Strength {Weak,Medium,Strong };
 
     }
 }
